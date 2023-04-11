@@ -16,88 +16,454 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="main">
-        <header class="container header active">
-            <div class="header-content">
-                <div class="h-shape"></div>
-                <div class="left-header">
-                    
-                    <div class="image">
-                        <img src="img/hi.png" alt="" class="img-fluid">
-                        <div class="social-icons">
-                            <a href=""><i class="fab fa-github" aria-hidden="true"></i></a>
-                            <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    
-                </div>
-    
-                <div class="right-header">
-                    <div class="text"></div>
-                        <div class="intro">
-                            Bonjour! <br>
-                            <h1>This is <span>Rifsha Ashraf</span>. </h1>
-                            A front-end developer.
-                        </div>
-                    
-                        <p>I'm a self-motivated computer science undergraduate with a 
-                            passion for designing and developing innovative solutions. 
-                            With a strong foundation in computer science and programming, 
-                            I have honed my skills in designing and developing user-friendly 
-                            applications that seamlessly integrate functionality and 
-                            aesthetics. I am committed to creating high-quality, efficient, 
-                            and effective software that solves real-world problems. 
-                            <p> Let's work together to bring your ideas to life! </p>
-                        </p> 
-                        <div class="btn-con">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Download</span>
-                                <span class="btn-icon"><i class="fas fa-download"></i></span>
-                            </a>
-                        </div>
-    
-                    </div>                   
-                </div>
-            </div>         
-        </header>
+    <nav class="nav controls" id="nav-bar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+      <div class="navbar" id="my-nav">
+        <li class="nav-item">
+            <a href="" class="nav-link theme-btn icon-control control">
+              <i class="fas fa-adjust"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Mode</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" data-id="home" >
+            <i class="fas fa-home"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" data-id="about" >
+            <i class="fas fa-user"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" data-id="my-portfolio" >
+            <i class="fas fa-briefcase"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;My Portfolio</span>
+          </a>
+        </li>
+        <li class="nav-item" data-id="blogs">
+          <a href="" class="nav-link">
+            <i class="fas fa-newspaper"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Blogs</span>
+          </a>
+        </li>
+        <li class="nav-item" data-id="contact">
+          <a href="" class="nav-link">
+            <i class="fas fa-envelope-open"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Contact</span>
+          </a>
+        </li>
         
+      </div>
 
-        <section class="about">
-            <div class="container">
-                <h2 class="py-5">About me</h2>
-                <div class="about-content">
-                    <div class="right-about">
-                        
-                        <p>Hello and welcome to my portfolio! My name is 
-                            Rifsha Ashraf and I am an undergraduate student 
-                            pursuing a Bachelor's degree in Computer Science 
-                            from Iqra University, Karachi. I am a self-motivated 
-                            individual with a passion for both designing and 
-                            development.
-                        </p>
-                        <p>
-                            Apart from my academic qualifications, I also have 
-                            experience working as a content writer and a part-time 
-                            freelance developer. My versatile skill set allows me 
-                            to work on a variety of projects and create solutions 
-                            that are not only functional, but also visually 
-                            appealing and user-friendly.
-                        </p>
+    </nav>
+    <header class="container header active" id="home">
+      <div class="header-content">
+          <div class="h-shape"></div>
+          <div class="left-header">                    
+              <div class="image">
+                  <img src="img/hi.png" alt="" class="img-fluid">
+                  <div class="social-icons">
+                      <h6><a href="https://github.com/iRifshaAshraf"><i class="fab fa-github" aria-hidden="true"></i>iRifsha Ashraf</a></h6>
+                      <h6><a href="https://www.linkedin.com/in/rifshaashraf/"><i class="fab fa-linkedin" aria-hidden="true"></i>rifsha.ashraf</a></h6>
+                  </div>
+              </div>                    
+          </div>
+
+          <div class="right-header">
+              <div class="text"></div>
+                  <div class="intro">
+                      Bonjour! <br>
+                      <h1>This is <span>Rifsha Ashraf</span>. </h1>
+                      A front-end developer.
+                  </div>
+              
+                  <p>I'm a self-motivated computer science undergraduate with a 
+                      passion for designing and developing innovative solutions. 
+                      With a strong foundation in computer science and programming, 
+                      I have honed my skills in designing and developing user-friendly 
+                      applications that seamlessly integrate functionality and 
+                      aesthetics. I am committed to creating high-quality, efficient, 
+                      and effective software that solves real-world problems. 
+                      <p> Let's work together to bring your ideas to life! </p>
+                  </p> 
+                  <!-- DOWNLOAD BUTTON  -->
+                  <div class="btn-con">
+                      <a href="" class="main-btn">
+                          <span class="btn-text">Download</span>
+                          <span class="btn-icon"><i class="fas fa-download"></i></span>
+                      </a>
+                  </div>
+
+              </div>                   
+          </div>
+      </div>         
+  </header>
+  <main>
+    <section class="about " id="about">
+      <div class="container">
+          <div class="section-title">
+              <h2 class="title-heading hola ">
+                  About <span>Me</span>
+                  <span class="line"></span>
+                  <h3 class="bg-text hola">My Stats</h3>                        
+              </h2>
+          </div>
+          <div class="about-content">
+              <div class="about-text-content">
+                  <div class="left-about">                        
+                      <p>Hello and welcome to my portfolio! My name is 
+                          Rifsha Ashraf and I am an undergraduate student 
+                          pursuing a Bachelor's degree in Computer Science 
+                          from Iqra University, Karachi. I am a self-motivated 
+                          individual with a passion for both designing and 
+                          development.
+                      </p>
+                      <p>
+                          Apart from my academic qualifications, I also have 
+                          experience working as a content writer and a part-time 
+                          freelance developer. My versatile skill set allows me 
+                          to work on a variety of projects and create solutions 
+                          that are not only functional, but also visually 
+                          appealing and user-friendly.
+                      </p>                      
+                  </div>
+                  <!-- <div class="right-about ">                        
+                    <h6><i class="fa fa-address-card " aria-hidden="true"></i>Rifsha Ashraf</h6>
+                    <h6><i class="fa fa-envelope " aria-hidden="true"></i>rifsha.ashraf1@gmail.com</h6>
+                    <h6><i class="fas fa-map-marker-alt " aria-hidden="true"></i>Karachi, Pakistan</h6>   
+                    
+                    DOWNLOAD BUTTON 
+                    <div class="btn-con mt-4">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Download</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>                     
+                  </div>
+              </div> -->
+          </div>
+          <div class="stats my-5">
+              <div class="cols-1 cols-format">
+                      <h3>6+</h3> <h4>Year of experience</h4>
+              </div>
+              <div class="cols-2 cols-left-border cols-format">
+                  <h3>6+</h3> <h4>Projects Completed</h4>
+              </div>
+              <div class="cols-3 cols-left-border cols-format">
+                  <h3>4+</h3> <h4>Happy Clients</h4>
+              </div>
+              <div class="cols-4 cols-left-border cols-format">
+                  <h3>4+</h3> <h4>Customer Reviews</h4>
+              </div>
+          </div>
+          <!-- <div class="my-services">
+              <div class="section-title">
+                  <h2 class="title-heading hola ">
+                      <span>My</span> Services
+                      <span class="line"></span>
+                      <h3 class="bg-text hola">What I Do</h3>                        
+                  </h2>
+              </div>
+              <div class="services">
+                  <div class="right-service">
+                      <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+
+                              <img src="img/hey-removebg-preview.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Content Writing</h5>
+                                <p class="card-text"> Enthusiastic content writer to spread information related to 
+                                  cybersecurity. Currently working as a content writer at ioSENTRIX</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="left-service">
+
+                  </div>
+              </div>
+          </div> -->
+      </div>
+  </section>
+  <section class="my-portfolio" id="my-portfolio">
+      <div class="container">
+          <div class="section-title">
+              <h2 class="title-heading hola ">
+                  <span>My</span> Portfolio
+                  <span class="line"></span>
+                  <h3 class="bg-text hola">Explore my work</h3>                        
+              </h2>
+          </div>
+          <p class="text-center">In this portfolio, you will find a selection of my work, 
+              including development projects, design samples, and 
+              writing samples. I am passionate about creating solutions 
+              that are not only functional, but also visually appealing 
+              and user-friendly. If you are interested in working with 
+              me or have any questions, please don't hesitate to get in 
+              touch.
+          </p>
+          <div class="site-template">
+              <h2 class="text-center my-5">Template</h2>
+              <div class="templates">
+                  <div class="left-template">                            
+                      <div class="template-1">
+                          <div class="card mb-3">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/bakery-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://bakery-rifsha.web.app/" target="_blank"><h5 class="card-title">Bakery</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="template-1">
+                          <div class="card mb-3" style="">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/ui-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://ui-template-rifsha.web.app/" target="_blank"><h5 class="card-title">UI Template</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="template-1">
+                          <div class="card mb-3" style="">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/adriana-gravino-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://adriana-gravino-rifsha.web.app/index.html" target="_blank"><h5 class="card-title">Adriana Gravino Template</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="template-1">
+                          <div class="card mb-3" style="">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/burger-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://burger-restaurant-r.web.app/" target="_blank"><h5 class="card-title">Burger Template</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="right-template">
+                      <div class="template-1">
+                          <div class="card mb-3">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/flynance-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://flynance-rifsha.web.app/" target="_blank"><h5 class="card-title">Flynance</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="template-1">
+                          <div class="card mb-3" style="">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/london-appliance-solutions-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://londonappliancesolutionsrifsha.web.app/" target="_blank"><h5 class="card-title">London Appliance Template</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="template-1">
+                          <div class="card mb-3" style="">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <!-- <a href="https://bakery-rifsha.web.app/"> -->
+                                      <img src="img/nuno-template.PNG" class="img-fluid card-img-top" alt="...">
+                                  <!-- </a> -->
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="https://nuno-rifsha.web.app/" target="_blank"><h5 class="card-title">Nuno</h5></a>
+                                    <p class="card-text"> This is the custom side. <br>
+                                      <b>Technology Used:</b>  HTML, CSS, bootstrap and JavaScript.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              
+          </div>
+      </div>           
+  </section>
+  <section class="blogs" id="blogs">
+      <div class="section-title">
+          <h2 class="title-heading hola ">
+              <span>Bl</span>ogs
+              <span class="line"></span>
+              <h3 class="bg-text hola">My Posts</h3>                        
+          </h2>
+      </div>
+      <div class="blog-card">
+          <div class="left-card">
+              <div class="card">
+                  <img src="img/sast-vs-dast-banner.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                      <a href="https://iosentrix.com/blog/SAST-vs-DAST-What-is-the-Difference/" target="_blank">
+                          <h5 class="card-title">SAST vs. DAST: What's the Difference?</h5>
+                      </a>                            
+                      <p class="card-text">SAST and DAST are integral components of an effective A
+                          pplication Security (AppSec) program and DevSecOps</p>
+                  </div>
+              </div>
+          </div>
+          <div class="middle-card">
+              <div class="card">
+                  <img src="img/openssl-cve-2022-3602-cve-2022-3786.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                      <a href="https://iosentrix.com/blog/CVE-2022-3602-and-CVE-2022-3786-Openssl-Vulnerabilities/" target="_blank">
+                          <h5 class="card-title">OpenSSL Vulnerability | CVE-2022-3602 and CVE-2022-3786</h5>
+                      </a>                          
+                      <p class="card-text">OpenSSL has released a security advisory for two vulnerabilities 
+                          in versions 3.0.0 to 3.0.6 of the OpenSSL library.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="right-card">
+              <div class="card">
+                  
+                  <img src="img/text4shell-vulnerability.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                      <a href="https://iosentrix.com/blog/CVE-2022-42889-Text4Shell-Vulnerability/" target="_blank">
+                          <h5 class="card-title">CVE-2022-42889 | Text4Shell Vulnerability</h5>
+                      </a>                            
+                      <p class="card-text">A critical vulnerability named "Text4Shell" has been discovered 
+                          in the Apache Commons Text Library by a GitHub Security Lab researcher. It allows 
+                          for code execution through processing of malicious input.</p>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+
+      
+  </section>
+  <section class="contact" id="contact">
+      <div class="section-title">
+          <h2 class="title-heading hola ">
+              Contact <span>Me</span>
+              <span class="line"></span>
+              <h3 class="bg-text hola">Reach me</h3>                        
+          </h2>
+      </div>
+      <div class="container">
+        <div class="h-shape"></div>
+        <div class="contact-me">
+            <div class="left-contact">
+                <form class="form-box">
+                    <input type="text" placeholder="Full Name" class="form-control" id="" aria-describedby="">
+                    <input type="email" placeholder="Email" class="form-control" id="" aria-describedby="">
+                    <input type="text" placeholder="Subject" class="form-control" id="" aria-describedby="">
+                    <!-- <div class="form-outline"> -->
+                        <textarea class="form-control" placeholder="Message" id="" rows=""></textarea>
+                        <!-- <label class="form-label" for="textAreaExample">Message</label> -->
+                      <!-- </div> -->
+                    <div class="btn-con">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Send</span>
+                            <!-- <span class="btn-icon"><i class="fas fa-download"></i></span> -->
+                        </a>
                     </div>
+                      
+                    
+                </form>
+            </div>
+            <div class="right-contact">
+                <div class="cheerio">
+                    <img src="img/cheerio.png" class="img-fluid" alt="">
+                    <div class="text-contact ">                        
+                      <h6><i class="fa fa-address-card " aria-hidden="true"></i>Rifsha Ashraf</h6>
+                      <h6><i class="fa fa-envelope " aria-hidden="true"></i>rifsha.ashraf1@gmail.com</h6>
+                      <h6><i class="fas fa-map-marker-alt " aria-hidden="true"></i>Karachi, Pakistan</h6>   
+                      
+                      <!-- DOWNLOAD BUTTON  -->
+                      <div class="btn-con mt-4">
+                          <a href="" class="main-btn">
+                              <span class="btn-text">Download</span>
+                              <span class="btn-icon"><i class="fas fa-download"></i></span>
+                          </a>
+                      </div>                     
+                    </div>
+                </div>
+                </div>
+                <div class="text-info">
+                  
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+      </div>
 
-    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-        <a href="" class="theme-btn icon-control"><i class="class fas fa-adjust"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Mode</span></a>
-        <a href="#" class="icon-control"><i class="fas fa-home"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Home</span></a>
-        <a href="#" class="icon-control"><i class="user-1 fas fa-user"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp; About</span></a>
-        <a href="#" class="icon-control"><i class="be fas fa-briefcase"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;My Portfolio</span></a>
-        <a href="#" class="icon-control"><i class="fas fa-newspaper"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Blogs</span></a>
-        <a href="#" class="icon-control"><i class="be fas fa-envelope-open"></i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Contact</span></a>        
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-text">
+        Copyright &#169; 2023<span class="color-scheme"> Rifsha Ashraf,</span> All Rights Reserved
     </div>
+  </footer>
     
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
