@@ -1,8 +1,3 @@
-*{
-  /* overflow: hidden; */
-  /* background-color: yellowgreen; */
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root {
 --color-primary: #191d2b;
@@ -555,6 +550,10 @@ form input{
 .contact .right-contact h6 i{
   margin-right: 10px;
 }
+.contact .right-contact .btn-con .main-btn{
+  /* padding: 0; */
+}
+
 .contact-me .cheerio img{
   border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
